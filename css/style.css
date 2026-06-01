@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #faf8f5;
-    --text-color: #2c2c2c;
-    --accent-color: #6b5b4f;
-    --link-color: #8b7355;
-    --border-color: #e5e0d8;
-    --card-bg: #ffffff;
+    --bg-color: #1a1d23;
+    --text-color: #c8ccd4;
+    --accent-color: #4a7a9b;
+    --link-color: #6b9dc8;
+    --border-color: #2d3340;
+    --card-bg: #21252d;
     --font-serif: "Noto Serif SC", "Source Han Serif SC", "SimSun", serif;
     --font-sans: "Noto Sans SC", "Microsoft YaHei", sans-serif;
 }
@@ -23,6 +23,9 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
+    background-image: 
+        radial-gradient(ellipse at 20% 0%, rgba(74, 122, 155, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 100%, rgba(45, 51, 64, 0.5) 0%, transparent 50%);
 }
 
 a {
@@ -32,7 +35,7 @@ a {
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: #8ec3f0;
 }
 
 .site-header {
@@ -53,6 +56,7 @@ a:hover {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--accent-color);
+    letter-spacing: 0.05em;
 }
 
 .nav-links {
@@ -65,10 +69,12 @@ a:hover {
     font-family: var(--font-sans);
     font-size: 0.95rem;
     color: var(--text-color);
+    opacity: 0.8;
 }
 
 .nav-links a:hover {
     color: var(--accent-color);
+    opacity: 1;
 }
 
 .hero {
@@ -83,12 +89,14 @@ a:hover {
     font-weight: 500;
     color: var(--accent-color);
     margin-bottom: 0.5rem;
+    letter-spacing: 0.1em;
 }
 
 .hero-subtitle {
     font-family: var(--font-sans);
     font-size: 1rem;
-    color: #888;
+    color: #8a919e;
+    font-style: italic;
 }
 
 section h2 {
@@ -111,6 +119,11 @@ section h2 {
     padding: 1.5rem;
     border-radius: 4px;
     border: 1px solid var(--border-color);
+    transition: border-color 0.2s ease;
+}
+
+.story-card:hover {
+    border-color: var(--accent-color);
 }
 
 .story-tag {
@@ -140,14 +153,14 @@ section h2 {
 
 .story-excerpt {
     font-size: 0.95rem;
-    color: #666;
+    color: #939aa4;
     margin-bottom: 0.5rem;
 }
 
 .story-date {
     font-family: var(--font-sans);
     font-size: 0.85rem;
-    color: #999;
+    color: #6b7280;
 }
 
 .site-footer {
@@ -157,7 +170,7 @@ section h2 {
     text-align: center;
     font-family: var(--font-sans);
     font-size: 0.9rem;
-    color: #888;
+    color: #6b7280;
 }
 
 .site-footer a {
@@ -174,7 +187,7 @@ section h2 {
 .chapter-number {
     font-family: var(--font-sans);
     font-size: 0.85rem;
-    color: #999;
+    color: #6b7280;
     margin-bottom: 0.5rem;
 }
 
@@ -187,7 +200,8 @@ section h2 {
 
 .chapter-subtitle {
     font-size: 1rem;
-    color: #888;
+    color: #8a919e;
+    font-style: italic;
 }
 
 .chapter-content {
@@ -241,13 +255,14 @@ section h2 {
     font-size: 1.4rem;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
+    color: var(--accent-color);
 }
 
 .world-article h3 {
     font-size: 1.15rem;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: var(--accent-color);
+    color: var(--link-color);
 }
 
 .world-article p {
@@ -267,7 +282,7 @@ section h2 {
     border-left: 3px solid var(--accent-color);
     padding-left: 1rem;
     margin: 1.5rem 0;
-    color: #666;
+    color: #939aa4;
     font-style: italic;
 }
 
