@@ -305,3 +305,11 @@ section h2 {
         gap: 1rem;
     }
 }
+
+/* 让内容浮于背景雨幕之上(canvas 为固定定位的底层,层级 0) */
+.site-header,
+.content,
+.site-footer {
+    position: relative;
+    z-index: 1;
+}
