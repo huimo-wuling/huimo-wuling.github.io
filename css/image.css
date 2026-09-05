@@ -44,6 +44,8 @@
     display: flex;
     gap: 2rem;
     background: var(--card-bg);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     padding: 1.5rem;
     border-radius: 4px;
     border: 1px solid var(--border-color);
@@ -113,6 +115,8 @@
 
 .map-container {
     background: var(--card-bg);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     padding: 1rem;
     border-radius: 4px;
     text-align: center;
