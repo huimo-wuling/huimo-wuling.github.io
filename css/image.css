@@ -93,6 +93,13 @@
     color: var(--text-color);
 }
 
+.character-more {
+    color: var(--link-color);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
 .world-section {
     margin-bottom: 3rem;
 }
